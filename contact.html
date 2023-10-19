@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    dancing: ['Dancing Script', 'serif'],
+                    mono: ['Roboto Mono', 'monospace'],
+                    playfair: ['Playfair Display', 'serif'],
+                    lato: ['Lato', 'sans-serif'],
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us - Chefy</title>
+</head>
+<body class="font-lato">
+    <section id="head">
+        <div class="bg-black bg-opacity-60 py-36">
+            <nav class="w-screen flex justify-between items-center p-8 px-12 fixed top-0 duration-300 z-10">
+                <h1 class="font-dancing text-3xl text-white font-semibold">
+                    <a href="/">CHEFY</a>
+                </h1>
+                <ul class="text-white flex space-x-10">
+                    <li><a class="hover:text-yellow-500 duration-200" href="/">Home</a></li>
+                    <li><a class="hover:text-yellow-500 duration-200" href="/recipes.html">Recipes</a></li>
+                    <li><a class="hover:text-yellow-500 duration-200" href="/about.html">About</a></li>
+                    <li><a class="hover:text-yellow-500 duration-200" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="w-3/5 mx-auto text-center">
+                <h1 class="text-8xl text-white font-playfair text-yellow-500 font-medium">Contact Us</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="flex p-20 space-x-12 justify-between">
+            <div class="flex flex-col justify-between">
+                <div class="w-full space-y-4">
+                    <h1 class="text-3xl font-playfair font-bold">Contact Us</h1>
+                    <p class="opacity-70 tracking-wide text-justify text-lg">We value your feedback, questions, and suggestions. Whether you want to share your cooking experiences, seek recipe recommendations, or simply say hello, we'd love to hear from you! Feel free to reach out using the contact form below or drop us an email at <span class="text-yellow-500 font-bold hover:underline cursor-pointer">contact@chefy.com</span>. Our dedicated team is here to assist you and make your culinary journey with Chefy as delightful as possible.</p>
+                </div>
+                <div class="w-full space-y-4">
+                    <h1 class="text-3xl font-playfair font-bold">Stay Connected</h1>
+                    <p class="opacity-70 tracking-wide text-justify text-lg">Don't miss out on our latest recipes, culinary tips, and exciting updates. Follow us on social media to stay connected with the Chefy community. Join the conversation, share your kitchen triumphs, and be inspired by fellow food enthusiasts. Let's cook together and make every meal a memorable one!</p>
+                </div>
+                <div class="space-x-8 flex items-center">
+                    <!-- <p>Social Handles:</p> -->
+                    <span class="text-3xl hover:text-yellow-500 hover:scale-125 duration-200 cursor-pointer"><i class="fa-brands fa-facebook"></i></span>
+                    <span class="text-3xl hover:text-yellow-500 hover:scale-125 duration-200 cursor-pointer"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="text-3xl hover:text-yellow-500 hover:scale-125 duration-200 cursor-pointer"><i class="fa-brands fa-instagram"></i></span>
+                </div>
+            </div>
+            <img src="images/contact-page-img.png" alt="food" class="w-2/5 rounded-full shadow-2xl">
+        </div>
+    </section>
+
+    <footer class="bg-gray-800">
+        <div class="w-full max-w-screen-xl mx-auto py-8">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <span class="font-dancing text-3xl font-semibold text-white">CHEFY</span>
+                </a>
+                <ul class="flex items-center text-sm font-medium text-white space-x-8">
+                    <li><a href="/" class="hover:text-yellow-500">Home</a></li>
+                    <li><a href="/recipes.html" class="hover:text-yellow-500">Recipes</a></li>
+                    <li><a href="/about.html" class="hover:text-yellow-500">About</a></li>
+                    <li><a href="/contact.html" class="hover:text-yellow-500">Contact Us</a></li>
+                </ul>
+            </div>
+            <hr class="my-8 mx-auto border-gray-600" />
+            <span class="block text-sm text-center text-white">© 2023 <a href="#" class="hover:underline">Chefy</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    dancing: ['Dancing Script', 'serif'],
+                    mono: ['Roboto Mono', 'monospace'],
+                    playfair: ['Playfair Display', 'serif'],
+                    lato: ['Lato', 'sans-serif'],
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Website</title>
+</head>
+<body class="font-lato">
+    <section id="home">
+        <div class="bg-black h-screen opacity-60"></div>
+        <div class="absolute top-0">
+            <nav class="w-screen flex justify-between items-center p-8 px-12 fixed duration-300 z-10">
+                <h1 class="font-dancing text-3xl text-white font-semibold">
+                    <a href="/">RECIPE</a>
+                </h1>
+                <ul class="text-white flex space-x-10">
+                    <li><a class="hover:text-yellow-500 duration-200" href="/">Home</a></li>
+                    <li><a class="hover:text-yellow-500 duration-200" href="/recipes.html">Recipes</a></li>
+                    <li><a class="hover:text-yellow-500 duration-200" href="/about.html">About</a></li>
+                    <li><a class="hover:text-yellow-500 duration-200" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="w-3/5 mx-auto text-center mt-52">
+                <h1 class=" text-8xl text-white font-playfair font-medium">Delicious Recipes and Cooking Tips</h1>
+                <h1 class="text-8xl text-white font-dancing text-yellow-500 font-bold">For Every Occasion</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="text-center py-12">
+            <div class="uppercase mb-4">
+                <h1 class="text-4xl tracking-wider">
+                    Welcome to Chefy
+                </h1>
+                <h3 class="text-2xl text-yellow-500 font-playfair font-bold tracking-wide">
+                    Food Lover Website
+                </h3>
+            </div>
+            <p class="max-w-4xl mx-auto">
+                Welcome to Chefy - Your culinary companion! Explore our diverse collection of mouthwatering recipes from around the world. Whether you're a seasoned chef or a curious home cook, our detailed instructions and helpful tips will guide you to create delicious and impressive dishes. Let's embark on a delightful cooking journey together at Chefy! Happy cooking!
+            </p>
+        </div>
+    </section>
+
+    <section id="popular-recipe">
+        <div class="bg-black bg-opacity-60 py-20">
+            <div class="text-center pb-20 space-y-4">
+                <h1 class="text-5xl text-center uppercase font-playfair font-medium text-yellow-500">Popular Recipes You Can't Miss!</h1>
+                <p class="text-white mx-auto max-w-4xl text-center text-xl">
+                    From comfort food classics to exotic flavors, our featured recipes are sure to impress.
+                </p>
+            </div>
+            <div class="flex items-center justify-evenly">
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl">
+                    <img src="images/greek-mousakka.png" alt="greek-mousakka" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Greek Mousakka</h1>
+                    <p class="text-justify my-2">Indulge in the flavors of Greece with this hearty dish. Layers of tender eggplant and flavorful ground lamb or beef are topped with a luscious bechamel sauce. The aromatic blend of oregano and cinnamon adds a unique twist, making it a comforting and irresistible Mediterranean delight.</p>
+                    <a href="/recipes/greek-mousakka.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl">
+                    <img src="images/thai-green-curry.png" alt="thai-green-curry" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Thai Green Curry</h1>
+                    <p class="text-justify my-2">Embark on a taste adventure with this vibrant Thai classic. Tender chicken or tofu is bathed in a creamy coconut and green curry paste sauce, infused with the fragrant flavors of basil and lemongrass. Served over jasmine rice, it's a delightful burst of sweet, spicy, and savory.</p>
+                    <a href="/recipes/thai-green-curry.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl">
+                    <img src="images/ratatouille.png" alt="ratatouille" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Ratatouille</h1>
+                    <p class="text-justify my-2">A rustic French favorite that celebrates the beauty of seasonal vegetables. Zucchini, eggplant, and bell peppers mingle in a flavorful tomato-based sauce, seasoned with aromatic herbs. Baked to perfection, Ratatouille captivates with its simplicity, making it a colorful and nutritious delight for all.</p>
+                    <a href="/recipes/ratatouille.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantages">
+        <div class="py-20">
+            <h1 class="text-5xl text-center uppercase font-playfair font-medium">Why Choose Chefy</h1>
+            <div class="mt-20 mx-12 space-y-12">
+                <div class="relative">
+                    <img src="images/adv1.png" alt="adv1" class="rounded-3xl">
+                    <div class="text-white bg-gray-800 bg-opacity-90 absolute top-1/2 -translate-y-1/2 right-0 max-w-4xl space-y-4 p-8 text-center rounded-xl">
+                        <h1 class="text-6xl font-dancing font-bold">Diverse Recipe Collection</h1>
+                        <p class="text-xl opacity-70 tracking-wide">Our website offers a wide range of mouthwatering recipes from various cuisines worldwide. Whether you're looking for traditional comfort foods or exotic delights, our diverse collection ensures there's something to satisfy every palate.</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="images/adv2.png" alt="adv2" class="rounded-3xl">
+                    <div class="text-white bg-gray-800 bg-opacity-90 absolute top-1/2 -translate-y-1/2 right-0 max-w-4xl space-y-4 p-8 text-center rounded-xl">
+                        <h1 class="text-6xl font-dancing font-bold">Detailed Instructions and Tips</h1>
+                        <p class="text-xl opacity-70 tracking-wide">We provide step-by-step instructions and useful tips for each recipe, making cooking a breeze even for beginners. Our precise measurements and cooking techniques guarantee successful results, allowing you to create delicious dishes with confidence.</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="images/adv3.png" alt="adv3" class="rounded-3xl">
+                    <div class="text-white bg-gray-800 bg-opacity-90 absolute top-1/2 -translate-y-1/2 right-0 max-w-4xl space-y-4 p-8 text-center rounded-xl">
+                        <h1 class="text-6xl font-dancing font-bold">Inspiration and Exploration</h1>
+                        <p class="text-xl opacity-70 tracking-wide">Chefy is a culinary haven that encourages creativity and exploration in the kitchen. With our innovative and unique recipes, you can embark on exciting culinary adventures, discover new flavors, and elevate your cooking skills to new heights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="bg-black bg-opacity-60 p-12">
+            <div class="flex justify-center items-center flex-col text-center bg-white w-1/2 mx-auto p-8 rounded-3xl bg-opacity-90 space-y-6">
+                <div class="space-y-2">
+                    <h1 class="text-4xl font-bold">Subscribe to our Newsletter!</h1>
+                    <p>Stay Hungry for More - Enjoy Fresh Recipes Delivered to Your Inbox Weekly!</p>
+                </div>
+                <div class="w-full">
+                    <form class="flex w-full justify-center items-center space-x-4">
+                        <input type="email" placeholder="Email Address" class="flex-1 p-4 rounded-xl outline-none" required>
+                        <button type="submit" class="flex justify-center p-4 text-white w-1/5 font-bold bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800  ">
+        <div class="w-full max-w-screen-xl mx-auto py-8">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <span class="font-dancing text-3xl font-semibold text-white">CHEFY</span>
+                </a>
+                <ul class="flex items-center text-sm font-medium text-white space-x-8">
+                    <li><a href="/" class="hover:text-yellow-500">Home</a></li>
+                    <li><a href="/recipes.html" class="hover:text-yellow-500">Recipes</a></li>
+                    <li><a href="/about.html" class="hover:text-yellow-500">About</a></li>
+                    <li><a href="/contact.html" class="hover:text-yellow-500">Contact Us</a></li>
+                </ul>
+            </div>
+            <hr class="my-8 mx-auto border-gray-600" />
+            <span class="block text-sm text-center text-white">© 2023 <a href="#" class="hover:underline">Chefy</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

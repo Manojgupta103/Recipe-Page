@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    dancing: ['Dancing Script', 'serif'],
+                    mono: ['Roboto Mono', 'monospace'],
+                    playfair: ['Playfair Display', 'serif'],
+                    lato: ['Lato', 'sans-serif'],
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Recipes </title>
+</head>
+<body class="font-lato">
+    <section id="head">
+        <div class="bg-black bg-opacity-60 py-36">
+            <nav class=" w-screen flex justify-between items-center p-8 px-12 fixed top-0 duration-300 z-10">
+                <h1 class="font-dancing text-3xl text-white font-semibold">
+                    <a href="/">CHEFY</a>
+                </h1>
+                <ul class="text-white flex space-x-10">
+                    <li><a class="hover:text-yellow-500 duration-200" href="/">Home</a></li>
+                    <li><a class="hover:text-yellow-500 duration-200" href="/recipes.html">Recipes</a></li>
+                    <li><a class="hover:text-yellow-500 duration-200" href="/about.html">About</a></li>
+                    <li><a class="hover:text-yellow-500 duration-200" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="w-3/5 mx-auto text-center">
+                <h1 class="text-8xl text-white font-playfair text-yellow-500 font-medium">Recipes</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="recipes">
+        <div class="py-20 space-y-20">
+            <h1 class="text-5xl text-center uppercase font-playfair font-medium">Discover Your Perfect Flavor!</h1>
+            <div class="flex items-center justify-evenly">
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl shadow-2xl">
+                    <img src="images/caesar-salad.png" alt="caesar-salad" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Caesar Salad</h1>
+                    <p class="text-justify my-2">A refreshing and crisp salad featuring romaine lettuce, crunchy croutons, and a tangy Caesar dressing made with anchovies and Parmesan cheese. This iconic salad is a crowd-pleaser and a delicious accompaniment to any meal.</p>
+                    <a href="/recipes/caesar-salad.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl shadow-2xl">
+                    <img src="images/chicken-stir-fry.png" alt="chicken-stir-fry" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Chicken Stir Fry</h1>
+                    <p class="text-justify my-2">A delightful and colorful medley of tender chicken, vibrant vegetables, and a savory soy-based sauce. This quick and healthy dish is perfect for busy weeknights, offering a harmonious balance of textures and flavors that will satisfy your taste buds.</p>
+                    <a href="/recipes/chicken-stir-fry.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl shadow-2xl">
+                    <img src="images/ratatouille.png" alt="ratatouille" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Ratatouille</h1>
+                    <p class="text-justify my-2">A rustic French favorite that celebrates the beauty of seasonal vegetables. Zucchini, eggplant, and bell peppers mingle in a flavorful tomato-based sauce, seasoned with aromatic herbs. Baked to perfection, Ratatouille captivates with its simplicity, making it a colorful and nutritious delight for all.</p>
+                    <a href="/recipes/ratatouille.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+            </div>
+            <div class="flex items-center justify-evenly">
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl shadow-2xl">
+                    <img src="images/greek-mousakka.png" alt="greek-mousakka" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Greek Mousakka</h1>
+                    <p class="text-justify my-2">Indulge in the flavors of Greece with this hearty dish. Layers of tender eggplant and flavorful ground lamb or beef are topped with a luscious bechamel sauce. The aromatic blend of oregano and cinnamon adds a unique twist, making it a comforting and irresistible Mediterranean delight.</p>
+                    <a href="/recipes/greek-mousakka.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl shadow-2xl">
+                    <img src="images/chocolate-chip-cookies.png" alt="chocolate-chip-cookies" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Chocolate Chip Cookies</h1>
+                    <p class="text-justify my-2">Irresistible, chewy, and loaded with chocolate goodness, these cookies are an all-time favorite treat. The combination of buttery dough and chocolate chips creates a delightful balance, making them perfect for satisfying your sweet tooth.</p>
+                    <a href="/recipes/chocolate-chip-cookies.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl shadow-2xl">
+                    <img src="images/spaghetti-carbonara.png" alt="spaghetti-carbonara" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Spaghetti Carbonara</h1>
+                    <p class="text-justify my-2">A classic Italian pasta dish, Spaghetti Carbonara features a creamy sauce made with eggs, Pecorino Romano cheese, and pancetta or guanciale. Tossed with perfectly cooked spaghetti, it's a quick and comforting meal with a burst of flavors from the salty pancetta and peppery cheese.</p>
+                    <a href="/recipes/spaghetti-carbonara.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+            </div>
+            <div class="flex items-center justify-evenly">
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl shadow-2xl">
+                    <img src="images/chicken-parmesan.png" alt="chicken-parmesan" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Chicken Parmesan</h1>
+                    <p class="text-justify my-2">Also known as Chicken Parmigiana, this Italian-American classic features breaded and fried chicken cutlets topped with marinara sauce and melted mozzarella cheese. Served over pasta, it's a hearty and flavorful dish loved by many for its comforting and cheesy goodness.</p>
+                    <a href="/recipes/chicken-parmesan.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl shadow-2xl">
+                    <img src="images/thai-green-curry.png" alt="thai-green-curry" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Thai Green Curry</h1>
+                    <p class="text-justify my-2">Embark on a taste adventure with this vibrant Thai classic. Tender chicken or tofu is bathed in a creamy coconut and green curry paste sauce, infused with the fragrant flavors of basil and lemongrass. Served over jasmine rice, it's a delightful burst of sweet, spicy, and savory.</p>
+                    <a href="/recipes/thai-green-curry.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+                <div class="w-1/3 mx-8 bg-white p-4 rounded-xl shadow-2xl">
+                    <img src="images/margherita-pizza.png" alt="margherita-pizza" class="rounded-xl">
+                    <h1 class="text-3xl my-4 font-bold font-dancing">Margherita Pizza</h1>
+                    <p class="text-justify my-2">A timeless pizza classic that celebrates simplicity and quality ingredients. This thin-crust pizza is topped with tomato sauce, fresh mozzarella cheese, and fragrant basil leaves, all baked to perfection for a heavenly, flavor-packed experience.</p>
+                    <a href="/recipes/margherita-pizza.html" class="flex justify-center py-4 mt-4 text-white font-bold w-full bg-yellow-500 rounded-xl border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-200">See Full Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800">
+        <div class="w-full max-w-screen-xl mx-auto py-8">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <span class="font-dancing text-3xl font-semibold text-white">CHEFY</span>
+                </a>
+                <ul class="flex items-center text-sm font-medium text-white space-x-8">
+                    <li><a href="/" class="hover:text-yellow-500">Home</a></li>
+                    <li><a href="/recipes.html" class="hover:text-yellow-500">Recipes</a></li>
+                    <li><a href="/about.html" class="hover:text-yellow-500">About</a></li>
+                    <li><a href="/contact.html" class="hover:text-yellow-500">Contact Us</a></li>
+                </ul>
+            </div>
+            <hr class="my-8 mx-auto border-gray-600" />
+            <span class="block text-sm text-center text-white">© 2023 <a href="#" class="hover:underline">Chefy</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
